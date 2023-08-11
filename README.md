@@ -11,7 +11,6 @@ Foi utilizado o React.js como library e Tailwind como estilização.
 - Listar Vacinas;
 - Deletar Vacinas;
 - Atualizar Vacinas;
-- Gráfico de Vacinas para Adulto/Criança;
 - Identificação de tipos de Vacina;
 
 
