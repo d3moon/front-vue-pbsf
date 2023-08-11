@@ -42,4 +42,3 @@ ou entre em: [front-vue-pbsf.vercel.app](front-vue-pbsf.vercel.app)
 
 - [João Victor F. Braga](https://www.github.com/d3moon)
 - [LinkedIn](https://www.linkedin.com/in/d3moon)
-# front-vue-pbsf
