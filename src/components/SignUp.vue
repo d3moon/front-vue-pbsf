@@ -29,7 +29,7 @@
                 class="form-radio h-4 w-4 text-cyan-600" />
               <span class="ml-2">Adulto</span>
             </label>
-            <label class="inline-flex items-center">
+            <label class="ml-2 inline-flex items-center">
               <input type="radio" name="publico_alvo" value="C" v-model="formData.publico_alvo"
                 class="form-radio h-4 w-4 text-cyan-600" />
               <span class="ml-2">Criança</span>
