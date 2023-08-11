@@ -20,7 +20,7 @@ Foi utilizado o React.js como library e Tailwind como estilização.
 Instale e rode o projeto com:
 
 ```bash
-  cd front-pbsf
+  cd front-vue-pbsf
   npm install
   npm run dev
 ```
