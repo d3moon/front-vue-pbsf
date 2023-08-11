@@ -42,6 +42,8 @@ export default {
     const store = useStore();
     const vacinaData = computed(() => store.state.vacinaData);
 
+    console.log(vacinaData)
+
     onMounted(() => {
       store.dispatch('fetchVacinaData');
     });
