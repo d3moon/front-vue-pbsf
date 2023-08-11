@@ -61,7 +61,6 @@ import { computed } from 'vue';
 import { useStore } from 'vuex';
 import axios from 'axios';
 import router from '../router';
-import '../style.css'
 
 export default {
   setup() {

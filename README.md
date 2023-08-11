@@ -3,7 +3,7 @@
 Essa aplicação destina-se à criação de uma interface para consumo de uma api feita usando uma biblioteca do Python chamada Django Rest Framework.
 Foi utilizado o React.js como library e Tailwind como estilização.
 
-**Por conta da falta de tempo, não consegui melhorar tanto o layout, mas os conceitos estão bem sólidos no código**
+**Por conta da falta de tempo, não consegui implementar o gráfico de Pizza (Adulto/Criança), mas os conceitos estão bem sólidos no código e o gráfico está disponível na versão React**
 
 **As funcionalidades da aplicação são:**
 
