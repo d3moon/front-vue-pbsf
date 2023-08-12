@@ -4,6 +4,8 @@
       Vacinas disponíveis
     </h1>
 
+    <canvas id="pieChart" width="200" height="200"></canvas>
+
     <ul class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-5">
       <li v-for="vacina in vacinaData" :key="vacina.id" class="h-24 bg-slate-100 rounded">
         <p class="justify-between my-1 text-lg text-center font-medium text-blue-950">
@@ -32,17 +34,18 @@
 </template>
 
 <script>
-import { computed, onMounted } from 'vue';
+import { computed, onMounted, watch } from 'vue';
 import { useStore } from 'vuex';
 import axios from 'axios';
 import router from '../router';
+import Chart from 'chart.js/auto';
 
 export default {
   setup() {
     const store = useStore();
     const vacinaData = computed(() => store.state.vacinaData);
 
-    console.log(vacinaData)
+    console.log(vacinaData);
 
     onMounted(() => {
       store.dispatch('fetchVacinaData');
@@ -61,6 +64,45 @@ export default {
       store.commit('setVaccineId', vacinaId);
       router.push('/edit');
     };
+
+    const renderPieChart = () => {
+      const publicoAlvoA = vacinaData.value.filter(
+        (vacina) => vacina.publico_alvo === 'A'
+      ).length;
+      const publicoAlvoC = vacinaData.value.filter(
+        (vacina) => vacina.publico_alvo === 'C'
+      ).length;
+
+      const existingChart = Chart.getChart('pieChart');
+      if (existingChart) {
+        existingChart.destroy();
+      }
+
+      const ctx = document.getElementById('pieChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'pie',
+        data: {
+          labels: ['Vacinas para Adultos', 'Vacinas para Crianças'],
+          datasets: [
+            {
+              data: [publicoAlvoA, publicoAlvoC],
+              backgroundColor: ['#FF6384', '#36A2EB'],
+            },
+          ],
+        },
+        options: {
+          aspectRatio: 6,
+        },
+      });
+    };
+
+    onMounted(() => {
+      renderPieChart();
+    });
+
+    watch(vacinaData, () => {
+      renderPieChart();
+    });
 
     return {
       vacinaData,
