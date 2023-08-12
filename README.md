@@ -11,7 +11,6 @@ Foi utilizado o React.js como library e Tailwind como estilização.
 - Listar Vacinas;
 - Deletar Vacinas;
 - Atualizar Vacinas;
-- Gráfico de Vacinas para Adulto/Criança;
 - Identificação de tipos de Vacina;
 
 
@@ -20,7 +19,7 @@ Foi utilizado o React.js como library e Tailwind como estilização.
 Instale e rode o projeto com:
 
 ```bash
-  cd front-pbsf
+  cd front-vue-pbsf
   npm install
   npm run dev
 ```
@@ -43,4 +42,3 @@ ou entre em: [front-vue-pbsf.vercel.app](front-vue-pbsf.vercel.app)
 
 - [João Victor F. Braga](https://www.github.com/d3moon)
 - [LinkedIn](https://www.linkedin.com/in/d3moon)
-# front-vue-pbsf
