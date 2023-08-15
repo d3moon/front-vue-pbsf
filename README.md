@@ -22,7 +22,7 @@ Instale e rode o projeto com:
   npm run dev
 ```
 
-ou entre em: [front-vue-pbsf.vercel.app](front-vue-pbsf.vercel.app)
+ou entre em: [front-vue-pbsf.vercel.app](https://front-vue-pbsf.vercel.app)
 
 **Instale o bakcend necessário**
 ```bash
