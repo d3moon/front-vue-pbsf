@@ -43,7 +43,7 @@ ou entre em: [front-vue-pbsf.vercel.app](https://front-vue-pbsf.vercel.app)
 
 ```
 
-3. Coloque suas credenciais no arquivo de database:
+3. Coloque suas credenciais no arquivo de config/Database.php:
 ```bash
     private $host = "";
     private $db_name = "vaccine";
