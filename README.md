@@ -13,20 +13,9 @@ Foi utilizado o React.js como library e Tailwind como estilização.
 
 ## Instalação
 
-Instale e rode o projeto com:
-
 ```bash
-  cd front-vue-pbsf
-  npm install
-  npm run dev
-```
-
-ou entre em: [front-vue-pbsf.vercel.app](front-vue-pbsf.vercel.app)
-
-**Instale o backend necessário:**
-
-```bash
-  git clone https://github.com/d3moon/back-php-pbsf.git
+  git clone https://github.com/d3moon/back-php-pbsf.git vacinas
+  cd back-php-pbsf
 ```
 1. Coloque a pasta em um servidor PHP: ex: (XAMPP)
 2. Crie o banco e a respectiva tabela no MySQL:
@@ -51,6 +40,8 @@ ou entre em: [front-vue-pbsf.vercel.app](front-vue-pbsf.vercel.app)
     private $port = 3306; (Mude caso esteja em outra porta.)
 ```
 4. Suba o servidor PHP com o XAMPP ou outro servidor.
+
+</br>
 
 
 ## Authors
