@@ -1,7 +1,7 @@
 # Frontend Vue - Desafio PBSF
 
 Essa aplicação destina-se à criação de uma interface para consumo de uma API feita em PHP.
-Foi utilizado o React.js como library e Tailwind como estilização.
+Foi utilizado o Vue como library e Tailwind como estilização.
 
 **As funcionalidades da aplicação são:**
 
