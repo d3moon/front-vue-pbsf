@@ -13,6 +13,18 @@ Foi utilizado o React.js como library e Tailwind como estilização.
 
 ## Instalação
 
+
+Instale e rode o projeto com:
+
+```bash
+  cd front-vue-pbsf
+  npm install
+  npm run dev
+```
+
+ou entre em: [front-pbsf.vercel.app](front-vue-pbsf.vercel.app)
+
+**Instale o bakcend necessário**
 ```bash
   git clone https://github.com/d3moon/back-php-pbsf.git vacinas
   cd vacinas
