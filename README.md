@@ -11,7 +11,6 @@ Foi utilizado o React.js como library e Tailwind como estilização.
 - Atualizar Vacinas;
 - Identificação de tipos de Vacina;
 
-
 ## Instalação
 
 Instale e rode o projeto com:
@@ -27,14 +26,32 @@ ou entre em: [front-vue-pbsf.vercel.app](front-vue-pbsf.vercel.app)
 **Instale o backend necessário:**
 
 ```bash
-  git clone https://github.com/d3moon/back-pbsf.git
-  cd back-pbsf
-  python3 -m virtualenv venv
-  source venv/bin/activate
-  pip install -r requirements.txt
-  python3 manage.py migrate
-  python3 manage.py runserver
+  git clone https://github.com/d3moon/back-php-pbsf.git
 ```
+1. Coloque a pasta em um servidor PHP: ex: (XAMPP)
+2. Crie o banco e a respectiva tabela:
+```sql
+    CREATE DATABASE vaccine;
+    USE vaccine;
+
+    CREATE TABLE vaccines (
+      id INT AUTO_INCREMENT PRIMARY KEY,
+      nome VARCHAR(255) NOT NULL,
+      publico_alvo VARCHAR(20) NOT NULL
+    );
+
+```
+
+3. Coloque suas credenciais no arquivo de database:
+```bash
+    private $host = "";
+    private $db_name = "";
+    private $username = "";
+    private $password = "1234";
+    private $port = 3306; (Mude caso esteja em outra porta.)
+```
+4. Suba o servidor PHP com o XAMPP ou outro servidor.
+
 
 ## Authors
 
