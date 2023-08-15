@@ -1,6 +1,6 @@
 # Frontend Vue - Desafio PBSF
 
-Essa aplicação destina-se à criação de uma interface para consumo de uma api feita usando uma biblioteca do Python chamada Django Rest Framework.
+Essa aplicação destina-se à criação de uma interface para consumo de uma api feita em PHP.
 Foi utilizado o React.js como library e Tailwind como estilização.
 
 **As funcionalidades da aplicação são:**
@@ -29,7 +29,7 @@ ou entre em: [front-vue-pbsf.vercel.app](front-vue-pbsf.vercel.app)
   git clone https://github.com/d3moon/back-php-pbsf.git
 ```
 1. Coloque a pasta em um servidor PHP: ex: (XAMPP)
-2. Crie o banco e a respectiva tabela:
+2. Crie o banco e a respectiva tabela no MySQL:
 ```sql
     CREATE DATABASE vaccine;
     USE vaccine;
@@ -45,9 +45,9 @@ ou entre em: [front-vue-pbsf.vercel.app](front-vue-pbsf.vercel.app)
 3. Coloque suas credenciais no arquivo de database:
 ```bash
     private $host = "";
-    private $db_name = "";
+    private $db_name = "vaccine";
     private $username = "";
-    private $password = "1234";
+    private $password = "";
     private $port = 3306; (Mude caso esteja em outra porta.)
 ```
 4. Suba o servidor PHP com o XAMPP ou outro servidor.
